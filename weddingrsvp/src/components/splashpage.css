@@ -1,0 +1,36 @@
+/* src/components/splashpage.css */
+.splash-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://live.staticflickr.com/5507/10355326296_93b08b780c.jpg'); /* Initial background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: background-image 1s ease-in-out; /* Smooth transition for background image */
+}
+
+.splash-page.open-door {
+    background-image: url('https://i0.wp.com/frametoframe.ca/wp-content/uploads/2017/01/bag-ends-green-door-at-hobbiton-New-Zealand.jpg?ssl=1'); /* Background image with door open */
+}
+
+.splash-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.splash-page button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.splash-page button:hover {
+    background-color: #0056b3;
+}
