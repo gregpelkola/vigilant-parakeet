@@ -1,16 +1,17 @@
+// src/components/SplashPage.jsx
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SplashPage = () => {
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleEnter = () => {
-        history.push('/details');
+        navigate('/details');
     };
-    
+
     return (
-        <div className='splash-page'>
-            <h1>Welcome to our Wedding</h1>
+        <div className="splash-page">
+            <h1>Welcome to Our Wedding</h1>
             <button onClick={handleEnter}>Enter</button>
         </div>
     );
