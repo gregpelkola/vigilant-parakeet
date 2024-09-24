@@ -9,7 +9,7 @@ const RSVPForm = () => {
     };
 
     const validationSchema = Yup.object({
-        guests: Yup.number().required('Required'), //.min(1, 'Must be at least 1').max(10, 'Must be 10 or fewer') commented out for testing
+        guests: Yup.number().required('Required').min(1, 'Must be at least 1').max(2, 'Must be 2 or fewer'), 
         dinnerChoice: Yup.string().required('Required')
     });
 
